@@ -3,6 +3,9 @@
 /**
  * Module dependencies.
  */
+const env = process.env.NODE_ENV || 'development';
+require('dotenv').config({ path: `./.env.${env}` });
+console.log(`Running in ${env} mode`);
 
 var app = require('../app');
 var debug = require('debug')('express-generator-js:server');
@@ -87,6 +90,4 @@ function onListening() {
     ? 'pipe ' + addr
     : 'port ' + addr.port;
   debug('Listening on ' + bind);
-  console.log('Listening on ' + bind);
-
 }
