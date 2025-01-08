@@ -1,7 +1,6 @@
 #!/usr/bin/env node
 
 import dotenv from 'dotenv';
-import createError from 'http-errors';
 import debug from 'debug';
 import http from 'http';
 import app from '../app';
