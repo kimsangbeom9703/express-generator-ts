@@ -1,14 +1,14 @@
 {
   "compilerOptions": {
-    "target": "ES6",
-    "module": "commonjs",
-    "strict": true,
-    "esModuleInterop": true,
-    "skipLibCheck": true,
-    "forceConsistentCasingInFileNames": true,
-    "outDir": "./dist",
-    "rootDir": "./src"
+    "target": "ES6",                         // TypeScript가 컴파일할 ECMAScript 버전 (이 경우 ES6).
+    "module": "commonjs",                    // 컴파일된 코드에서 사용할 모듈 시스템. `commonjs`는 일반적으로 Node.js에서 사용됩니다.
+    "strict": true,                          // 모든 엄격한 타입 검사 옵션을 활성화합니다 (예: 암시적인 `any` 사용 방지).
+    "esModuleInterop": true,                 // 기본 내보내기(default export)가 없는 모듈에서 기본 임포트를 허용하여 CommonJS 모듈과의 호환성을 높입니다.
+    "skipLibCheck": true,                    // 선언 파일(`.d.ts`)의 타입 검사를 생략하여 빌드 성능을 향상시킵니다.
+    "forceConsistentCasingInFileNames": true, // 파일 이름의 대소문자가 일관되도록 강제합니다.
+    "outDir": "./dist",                      // 컴파일된 JavaScript 파일을 저장할 출력 디렉토리입니다.
+    "rootDir": "./src"                       // TypeScript 소스 파일이 위치한 루트 디렉토리입니다.
   },
-  "include": ["src/**/*.ts"],
-  "exclude": ["node_modules"]
+  "include": ["src/**/*.ts"],                // `src` 디렉토리 및 하위 디렉토리의 모든 `.ts` 파일을 포함합니다.
+  "exclude": ["node_modules"]                // `node_modules` 디렉토리는 컴파일에서 제외됩니다.
 }
